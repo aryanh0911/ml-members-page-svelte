@@ -83,7 +83,7 @@
 
     .member-role {
         font-weight: 200;
-        font-size: 1.2rem;
+        font-size: .9rem;
         margin-top: .2rem;
     }
 
