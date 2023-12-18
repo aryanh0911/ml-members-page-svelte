@@ -108,9 +108,9 @@
 
 
 
-<div class="container background">
+<div class="container">
 
-    <div class="grid-container foreground">
+    <div class="grid-container">
         {#each membersList as member}
         <div class="grid-item"> 
             <Card 
@@ -134,32 +134,75 @@
 <!-- STYLES -->
 <style>
     .container {
-        z-index: -10;
         box-sizing: border-box;
         font-family: Montserrat;
         max-width: 90%;
-        padding: 6rem 18rem;
+        /* padding: 6rem 18rem; */
+        padding-top: 10rem;
+        padding-bottom: 10rem;
         margin: 6rem auto;
         border-radius: 2rem;
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
         url(../assets/images/armand-khoury-4cBVro7SHLs-unsplash.jpg);
         background-size: contain;
-        perspective: 10px;
+        position: relative; 
         
     }
 
     .grid-container{
-        z-index: 99;
-        /* margin: 0 auto; */
+        margin: 0 auto;
+        max-width: 90%;
         box-sizing: border-box;
         display: grid;
+        place-content: center;
         grid-template-columns: auto auto auto;
-        column-gap: 0;
+        column-gap: 2rem;
         row-gap: 4rem;
+        /* padding: 0 auto; */
     }
 
     .grid-item {
         text-align: center;
+        /* padding: 0 1rem; */
+        /* max-width: 20rem; */
+    }
+
+
+
+
+
+
+    /* MEDIA QUERIES */
+
+    @media (max-width: 1340px) {
+        .grid-container {
+            column-gap: 1rem;
+        }
+    }
+
+    @media (max-width: 1100px) {
+        .container {
+            padding-top: 6rem;
+        }
+    }
+
+
+    @media (max-width: 770px) {
+        .container {
+            padding-top: 4.5rem;
+        }
+    }
+
+    @media (max-width: 650px) {
+        .grid-container {
+            grid-template-columns: auto auto;
+        }
+    }
+
+    @media (max-width: 530px) {
+        .grid-container {
+            row-gap: 1.5rem;
+        }
     }
 
     
