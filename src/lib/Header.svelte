@@ -37,4 +37,14 @@
         border-color: #726868;
         margin: 0 auto;
     }
+
+
+
+
+    /* MEDIA QUERY */
+    @media (max-width: 650px) {
+        .heading{
+            font-size: 1.4rem;
+        }
+    }
 </style>
