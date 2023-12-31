@@ -34,11 +34,11 @@
     .container {
         box-sizing: border-box;
         font-family: Montserrat;
-        max-width: 90%;
+        max-width: 92%;
         /* padding: 6rem 18rem; */
-        padding-top: 10rem;
-        padding-bottom: 10rem;
-        margin: 6rem auto;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        margin: 4rem auto;
         border-radius: 2rem;
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
         url(../assets/images/armand-khoury-4cBVro7SHLs-unsplash.jpg);
@@ -100,6 +100,23 @@
     @media (max-width: 530px) {
         .grid-container {
             row-gap: 1.5rem;
+        }
+
+        .container {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+    }
+
+    @media (max-width: 460px) {
+        .container {
+            max-width: 94%;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .grid-container {
+            column-gap: .5rem;
         }
     }
 
