@@ -302,7 +302,7 @@
 
     @media (max-width: 530px) {
         .card {
-            min-width: 12rem;
+            min-width: 13.2rem;
             height: 16rem;
 
         }
@@ -312,8 +312,33 @@
         }
 
         .member-image img{
-            height: 6rem;
-            width: 6rem;
+            height: 7rem;
+            width: 7rem;
+        }
+
+        .member-name {
+            font-size: .9rem;
+        }
+        .member-role {
+            font-size: .8rem;
+        }
+
+    } 
+
+    @media (max-width: 495px) {
+        .card {
+            min-width: 12.5rem;
+            height: 16rem;
+
+        }
+
+        .member-role {
+            font-size: .7rem;
+        }
+
+        .member-image img{
+            height: 7rem;
+            width: 7rem;
         }
 
         .member-name {
@@ -327,35 +352,35 @@
 
     @media (max-width: 460px) {
         .card {
-            min-width: 10rem;
+            min-width: 11.4rem;
             height: 14.5rem;
 
         }
 
         .member-image img{
-            height: 5rem;
-            width: 5rem;
+            height: 6rem;
+            width: 6rem;
         }
 
         .member-name {
             font-size: .8rem;
         }
         .member-role {
-            font-size: .8rem;
+            font-size: .7rem;
         }
 
     } 
 
     @media (max-width: 400px) {
         .card {
-            min-width: 9rem;
+            min-width: 10.2rem;
             height: 13rem;
 
         }
 
         .member-image img{
-            height: 4rem;
-            width: 4rem;
+            height: 5.5rem;
+            width: 5.5rem;
         }
 
         .member-name {
@@ -373,18 +398,18 @@
 
     @media (max-width: 360px) {
         .card {
-            min-width: 7rem;
+            min-width: 8.8rem;
             height: 12rem;
 
         }
 
         .member-image img{
-            height: 4rem;
-            width: 4rem;
+            height: 5rem;
+            width: 5rem;
         }
 
         .member-name {
-            font-size: .7rem;
+            font-size: .56rem;
         }
         .member-role {
             font-size: .6rem;
